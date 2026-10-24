@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101d29"><meta name="description" content="從數位遊戲、動畫、XR到聲音創作，探索中國科技大學數位多媒體設計系的3D概念展館。"><title>DMD 創意宇宙｜中國科技大學數位多媒體設計系</title><link rel="stylesheet" href="./style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head>
+<body>
+<div id="world" aria-label="六個創意展區的3D互動場景"></div><div id="markers"></div>
+<header><a class="brand" href="./" aria-label="DMD 創意宇宙首頁"><b>DMD<span>↗</span></b><span>中國科技大學<br>數位多媒體設計系</span></a><nav aria-label="主要導覽"><button id="about">關於這個宇宙</button><a href="https://dmd.cute.edu.tw/" target="_blank" rel="noopener">系所官網 ↗</a><a class="apply" href="https://recruit.cute.edu.tw/" target="_blank" rel="noopener">探索入學機會 ↗</a></nav></header>
+<main><section id="intro"><p class="eyebrow"><i></i> EXPLORE YOUR NEXT DIMENSION</p><h1>把想像，<br>變成<span>可玩的</span><br>世界。</h1><p class="intro-copy">從一個角色、一段故事，到一個全新的實境。<br>走進數媒，找到你的創作座標。</p><button id="start" class="primary">開始探索 <span>↗</span></button><div class="small-stats"><div><b>06</b><span>創意展區</span></div><div><b>∞</b><span>想像的可能</span></div></div></section>
+<div class="scene-caption"><span>01 — 06 / THE CREATIVE ARCHIPELAGO</span><p>拖曳旋轉 · 滾輪縮放 · 點擊展區探索</p></div>
+<section id="panel" aria-labelledby="panel-title" hidden><button class="close" id="close-panel" aria-label="關閉展區介紹">×</button><div id="panel-content"></div></section>
+</main>
+<div class="view-tools" aria-label="場景控制"><button id="home" title="返回全景">⌂<span>全景</span></button><button id="motion" aria-pressed="false" title="暫停場景動畫">Ⅱ<span>暫停</span></button><button id="light" aria-pressed="false" title="切換日夜">☀<span>日景</span></button></div>
+<footer><div class="dock-title"><span>選擇你的創作入口</span><button id="passport">探索護照 <b id="count">0 / 6</b></button></div><nav id="dock" aria-label="六個創意展區"></nav><div class="footnote"><span>中國科技大學 DMD · 概念互動展館，非實際校舍配置</span><button id="about-mobile">資料與聯絡 ↗</button><span>內容參考系網 · 2026.10.24</span></div></footer>
+<dialog id="info"><button class="close" id="close-info" aria-label="關閉視窗">×</button><div id="info-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div><div id="loading" role="status">正在搭建創意宇宙…</div>
+<noscript><div class="no-script">請啟用 JavaScript 以探索3D展館。亦可直接前往 <a href="https://dmd.cute.edu.tw/">數媒系官網</a>。</div></noscript>
+<script type="module" src="./app.js"></script></body></html>
